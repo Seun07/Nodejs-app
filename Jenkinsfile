@@ -12,8 +12,8 @@ pipeline {
     stage("GitHub git cloning") {
             steps {
                 script {
-                    #checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GITHUB_CREDENTIALS', url: 'https://github.com/clement2019/Deploy-NodeAp-AWS-EKS-jenkins.git']])
-                    //git branch: 'main', url: 'https://github.com/Seun07/Nodejs-app.git' 
+                    //checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GITHUB_CREDENTIALS', url: 'https://github.com/clement2019/Deploy-NodeAp-AWS-EKS-jenkins.git']])
+                    git branch: 'main', url: 'https://github.com/Seun07/Nodejs-app.git' 
                 }
             }
         }
