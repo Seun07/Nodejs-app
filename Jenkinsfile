@@ -33,7 +33,7 @@ pipeline {
                   sh 'printenv'
                   sh 'git version'
                   //sh 'docker build -t seun0706/node-app:""$Build_ID"".'
-                  sh 'docker build -t seun0706/node-app7.0 .'
+                  sh 'docker build -t seun0706/node-image .'
                 }
             }
         }
@@ -48,7 +48,7 @@ pipeline {
             }
             //normally
             //sh 'docker push seun0706/node-app:""$Build_ID""'
-            sh 'docker push seun0706/node-app7.0:latest'
+            sh 'docker push seun0706/node-image:latest'
         }
             }   
         }
